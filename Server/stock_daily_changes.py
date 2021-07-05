@@ -4,32 +4,15 @@ import json
 import pandas_ta as ta 
 import sqlite3
 import os, sys
-from initial_traning import MLModel
-from stock import Stock
+#from initial_traning import MLModel
+#from stock import Stock
+from aux_classes import Stock, MLModel
 import pickle
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-
-
-# class Stock:
-#     def __init__(self, symbol, company, category, start):
-#         self.sym = symbol
-#         self.company = company
-#         self.category = category
-#         self.start = start
-#         self.last_update = datetime.today().strftime('%Y-%m-%d')
-#         self.classification = None
-#         self.technical_indicators = None
-#         self.raw_data = None
-#         self.extended_df = None
-
-#print(os.listdir())
-
-
-
 # Cerate connection to the SQL db
-con = sqlite3.connect("backend-env/api_data_base.db")
+con = sqlite3.connect("Server/api_data_base.db")
 cur = con.cursor()
 
 # Check if stock exists in db

@@ -3,33 +3,19 @@ import os
 import pandas as pd
 import numpy as np
 import pickle
-from datetime import datetime
 import json
 import uvicorn
-from fastapi import Request
-import models
-from database import engine
+from database import engine, Base
 
 from sqlalchemy.orm import Session
-from database import SessionLocal
+from database import SessionLocal, StockModel, get_db
 from fastapi import Depends
-from models import StockModel
+#from models import StockModel
 
 from sqlalchemy import desc
 
-from fastapi import Depends
+from aux_classes import Stock
 
-class Stock:
-    def __init__(self, symbol, company, category, start):
-        self.sym = symbol
-        self.company = company
-        self.category = category
-        self.start = start
-        self.last_update = datetime.today().strftime('%Y-%m-%d')
-        self.classification = None
-        self.technical_indicators = None
-        self.raw_data = None
-        self.extended_df = None
 
 def slicer_vectorized(a,start,end):
     b = a.view((str,1)).reshape(len(a),-1)[:,start:end]
@@ -61,13 +47,13 @@ def load_data():
 
 
 # Get cinnection to the db
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
-    pass
+# def get_db():
+#     db = SessionLocal()
+#     try:
+#         yield db
+#     finally:
+#         db.close()
+#     pass
 
 
 from pydantic import BaseModel
@@ -79,10 +65,12 @@ class StockSchema(BaseModel):
 
 
 
-models.Base.metadata.create_all(engine)
+#models.Base.metadata.create_all(engine)
+Base.metadata.create_all(engine)
 
 
 data = load_data()
+
 
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -258,15 +246,6 @@ def update_counter(symbol: str, inc: bool = True,  db: Session = Depends(get_db)
         # If the func crashes - raise error
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
                             detail="Something went wrong")
-
-
-# @app.post('/stock')
-# def create(request: StockSchema, db: Session = Depends(get_db)):
-#     new_quote = StockModel(symbol=request.symbol, followers=request.followers, gain=request.gain, prediction=None)
-#     db.add(new_quote)
-#     db.commit()
-#     db.refresh(new_quote)
-#     return new_quote
 
 
 

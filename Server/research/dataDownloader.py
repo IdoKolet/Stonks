@@ -2,6 +2,16 @@
     The production version is \colab_files\colab_data_downloader.ipynb
 """
 
+# Imports
+import json
+import pandas as pd
+import yfinance as yf
+from datetime import datetime
+import pickle
+from datetime import datetime
+from talib import abstract
+
+
 class Stock:
     """Struct Class - used to save all the stock's data as one object
     """
@@ -17,6 +27,24 @@ class Stock:
         self.raw_data = None
         self.extended_df = None
 
+
+# Create dictionary of abstract techlinical analysis function
+# Each of them will be calculated on the raw data and then be added to the df
+class Indicators:
+    @staticmethod
+    def create_indicators_file():
+        # Technical Indicator: [function, [tags]]
+        indicators_dict =  {'sma': [abstract.SMA, ['sma']],
+                            'ema': [abstract.EMA, ['ema']],
+                            'bbands': [abstract.BBANDS, ['upperband', 'middleband', 'lowerband']],
+                            'stoch': [abstract.STOCH, ['slowk', 'slowd']],
+                            'macd': [abstract.MACD, ['macd', 'macdsignal', 'macdhist']],
+                            'rsi': [abstract.RSI, ['rsi']],
+                            'adx': [abstract.ADX, ['adx']],
+                            'cci': [abstract.CCI, ['cci']],
+                            'aroon': [abstract.AROON, ['aroondown', 'aroonup']]
+                           }
+        return indicators_dict
 
 class DataDownloader:
     """Class of methods use for downloading the data
