@@ -1,0 +1,611 @@
+==========[ AMZN ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+804/804 [==============================] - 23s 24ms/step - loss: 0.4652 - val_loss: 0.7071
+Epoch 2/12
+804/804 [==============================] - 18s 23ms/step - loss: 0.3965 - val_loss: 0.6930
+Epoch 3/12
+804/804 [==============================] - 19s 23ms/step - loss: 0.3946 - val_loss: 0.6814
+Epoch 4/12
+804/804 [==============================] - 18s 23ms/step - loss: 0.3899 - val_loss: 0.6700
+Epoch 5/12
+804/804 [==============================] - 18s 23ms/step - loss: 0.3858 - val_loss: 0.6640
+Epoch 6/12
+804/804 [==============================] - 19s 23ms/step - loss: 0.3822 - val_loss: 0.6597
+Epoch 7/12
+804/804 [==============================] - 19s 23ms/step - loss: 0.3788 - val_loss: 0.6569
+Epoch 8/12
+804/804 [==============================] - 19s 24ms/step - loss: 0.3765 - val_loss: 0.6533
+Epoch 9/12
+804/804 [==============================] - 19s 24ms/step - loss: 0.3747 - val_loss: 0.6486
+Epoch 10/12
+804/804 [==============================] - 19s 23ms/step - loss: 0.3732 - val_loss: 0.6432
+Epoch 11/12
+804/804 [==============================] - 19s 23ms/step - loss: 0.3711 - val_loss: 0.6402
+Epoch 12/12
+804/804 [==============================] - 19s 24ms/step - loss: 0.3687 - val_loss: 0.6380
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.2431561996779388, Recall: 0.3333333333333333, F1: 0.2811918063314711
+
+==========[ BNTX ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+186/186 [==============================] - 9s 29ms/step - loss: 1.1443 - val_loss: 1.1514
+Epoch 2/12
+186/186 [==============================] - 4s 24ms/step - loss: 1.1128 - val_loss: 1.1189
+Epoch 3/12
+186/186 [==============================] - 4s 24ms/step - loss: 1.1053 - val_loss: 1.1083
+Epoch 4/12
+186/186 [==============================] - 5s 24ms/step - loss: 1.0981 - val_loss: 1.1082
+Epoch 5/12
+186/186 [==============================] - 4s 24ms/step - loss: 1.0974 - val_loss: 1.1070
+Epoch 6/12
+186/186 [==============================] - 4s 24ms/step - loss: 1.0967 - val_loss: 1.1069
+Epoch 7/12
+186/186 [==============================] - 4s 24ms/step - loss: 1.0916 - val_loss: 1.1084
+Epoch 8/12
+186/186 [==============================] - 4s 24ms/step - loss: 1.0834 - val_loss: 1.1101
+Epoch 9/12
+186/186 [==============================] - 4s 24ms/step - loss: 1.0722 - val_loss: 1.1127
+Epoch 10/12
+186/186 [==============================] - 4s 24ms/step - loss: 1.0590 - val_loss: 1.1131
+Epoch 11/12
+186/186 [==============================] - 5s 24ms/step - loss: 1.0562 - val_loss: 1.1170
+Epoch 12/12
+186/186 [==============================] - 4s 24ms/step - loss: 1.0337 - val_loss: 1.1037
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.07142857142857142, Recall: 0.3333333333333333, F1: 0.11764705882352942
+
+==========[ MRNA ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+166/166 [==============================] - 9s 29ms/step - loss: 1.1367 - val_loss: 1.1156
+Epoch 2/12
+166/166 [==============================] - 4s 24ms/step - loss: 1.1097 - val_loss: 1.0856
+Epoch 3/12
+166/166 [==============================] - 4s 24ms/step - loss: 1.0999 - val_loss: 1.0862
+Epoch 4/12
+166/166 [==============================] - 4s 24ms/step - loss: 1.0978 - val_loss: 1.0838
+Epoch 5/12
+166/166 [==============================] - 4s 24ms/step - loss: 1.0982 - val_loss: 1.0828
+Epoch 6/12
+166/166 [==============================] - 4s 24ms/step - loss: 1.0975 - val_loss: 1.0839
+Epoch 7/12
+166/166 [==============================] - 4s 24ms/step - loss: 1.0956 - val_loss: 1.0840
+Epoch 8/12
+166/166 [==============================] - 4s 24ms/step - loss: 1.0963 - val_loss: 1.0977
+Epoch 9/12
+166/166 [==============================] - 4s 24ms/step - loss: 1.0948 - val_loss: 1.0996
+Epoch 10/12
+166/166 [==============================] - 4s 24ms/step - loss: 1.0927 - val_loss: 1.1004
+Epoch 11/12
+166/166 [==============================] - 4s 24ms/step - loss: 1.0925 - val_loss: 1.1039
+Epoch 12/12
+166/166 [==============================] - 4s 24ms/step - loss: 1.0903 - val_loss: 1.1303
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.125, Recall: 0.3333333333333333, F1: 0.1818181818181818
+
+==========[ AMD ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+3985/3985 [==============================] - 100s 24ms/step - loss: 1.0658 - val_loss: 0.9744
+Epoch 2/12
+3985/3985 [==============================] - 94s 24ms/step - loss: 1.0600 - val_loss: 0.9705
+Epoch 3/12
+3985/3985 [==============================] - 93s 23ms/step - loss: 1.0602 - val_loss: 0.9718
+Epoch 4/12
+3985/3985 [==============================] - 93s 23ms/step - loss: 1.0601 - val_loss: 0.9721
+Epoch 5/12
+3985/3985 [==============================] - 94s 24ms/step - loss: 1.0596 - val_loss: 0.9662
+Epoch 6/12
+3985/3985 [==============================] - 94s 24ms/step - loss: 1.0592 - val_loss: 0.9682
+Epoch 7/12
+3985/3985 [==============================] - 93s 23ms/step - loss: 1.0588 - val_loss: 0.9686
+Epoch 8/12
+3985/3985 [==============================] - 93s 23ms/step - loss: 1.0597 - val_loss: 0.9662
+Epoch 9/12
+3985/3985 [==============================] - 93s 23ms/step - loss: 1.0590 - val_loss: 0.9676
+Epoch 10/12
+3985/3985 [==============================] - 93s 23ms/step - loss: 1.0588 - val_loss: 0.9636
+Epoch 11/12
+3985/3985 [==============================] - 93s 23ms/step - loss: 1.0598 - val_loss: 0.9615
+Epoch 12/12
+3985/3985 [==============================] - 93s 23ms/step - loss: 1.0593 - val_loss: 0.9631
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+==========[ ORCL ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+3568/3568 [==============================] - 88s 24ms/step - loss: 0.9589 - val_loss: 0.3698
+Epoch 2/12
+3568/3568 [==============================] - 83s 23ms/step - loss: 0.9877 - val_loss: 0.3689
+Epoch 3/12
+3568/3568 [==============================] - 83s 23ms/step - loss: 0.9942 - val_loss: 0.3682
+Epoch 4/12
+3568/3568 [==============================] - 85s 24ms/step - loss: 0.9965 - val_loss: 0.3680
+Epoch 5/12
+3568/3568 [==============================] - 85s 24ms/step - loss: 0.9967 - val_loss: 0.3675
+Epoch 6/12
+3568/3568 [==============================] - 86s 24ms/step - loss: 0.9933 - val_loss: 0.3675
+Epoch 7/12
+3568/3568 [==============================] - 89s 25ms/step - loss: 0.9983 - val_loss: 0.3674
+Epoch 8/12
+3568/3568 [==============================] - 88s 25ms/step - loss: 0.9870 - val_loss: 0.3666
+Epoch 9/12
+3568/3568 [==============================] - 88s 25ms/step - loss: 0.9909 - val_loss: 0.3667
+Epoch 10/12
+3568/3568 [==============================] - 86s 24ms/step - loss: 0.9771 - val_loss: 0.3664
+Epoch 11/12
+3568/3568 [==============================] - 86s 24ms/step - loss: 0.9757 - val_loss: 0.3658
+Epoch 12/12
+3568/3568 [==============================] - 84s 24ms/step - loss: 0.9793 - val_loss: 0.3660
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Precision: 0.2903426791277259, Recall: 0.3333333333333333, F1: 0.31035631035631034
+==========[ PANW ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+1100/1100 [==============================] - 31s 24ms/step - loss: 0.8295 - val_loss: 0.7380
+Epoch 2/12
+1100/1100 [==============================] - 26s 23ms/step - loss: 0.7979 - val_loss: 0.7144
+Epoch 3/12
+1100/1100 [==============================] - 26s 23ms/step - loss: 0.7945 - val_loss: 0.6946
+Epoch 4/12
+1100/1100 [==============================] - 26s 23ms/step - loss: 0.7909 - val_loss: 0.6992
+Epoch 5/12
+1100/1100 [==============================] - 26s 23ms/step - loss: 0.7934 - val_loss: 0.6892
+Epoch 6/12
+1100/1100 [==============================] - 26s 23ms/step - loss: 0.7950 - val_loss: 0.6697
+Epoch 7/12
+1100/1100 [==============================] - 26s 23ms/step - loss: 0.7934 - val_loss: 0.6315
+Epoch 8/12
+1100/1100 [==============================] - 26s 24ms/step - loss: 0.7960 - val_loss: 0.6304
+Epoch 9/12
+1100/1100 [==============================] - 26s 24ms/step - loss: 0.7965 - val_loss: 0.6367
+Epoch 10/12
+1100/1100 [==============================] - 26s 24ms/step - loss: 0.7938 - val_loss: 0.6360
+Epoch 11/12
+1100/1100 [==============================] - 26s 23ms/step - loss: 0.7927 - val_loss: 0.6349
+Epoch 12/12
+1100/1100 [==============================] - 26s 24ms/step - loss: 0.7911 - val_loss: 0.6305
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.24080267558528426, Recall: 0.3333333333333333, F1: 0.2796116504854369
+
+==========[ BTC-USD ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+893/893 [==============================] - 26s 24ms/step - loss: 1.0498 - val_loss: 0.9337
+Epoch 2/12
+893/893 [==============================] - 21s 23ms/step - loss: 1.0531 - val_loss: 0.9281
+Epoch 3/12
+893/893 [==============================] - 21s 23ms/step - loss: 1.0525 - val_loss: 0.9228
+Epoch 4/12
+893/893 [==============================] - 21s 23ms/step - loss: 1.0563 - val_loss: 0.9209
+Epoch 5/12
+893/893 [==============================] - 21s 24ms/step - loss: 1.0598 - val_loss: 0.9211
+Epoch 6/12
+893/893 [==============================] - 21s 24ms/step - loss: 1.0665 - val_loss: 0.9243
+Epoch 7/12
+893/893 [==============================] - 21s 23ms/step - loss: 1.0740 - val_loss: 0.9216
+Epoch 8/12
+893/893 [==============================] - 21s 23ms/step - loss: 1.0755 - val_loss: 0.9215
+Epoch 9/12
+893/893 [==============================] - 21s 23ms/step - loss: 1.0678 - val_loss: 0.9298
+Epoch 10/12
+893/893 [==============================] - 21s 23ms/step - loss: 1.0622 - val_loss: 0.9222
+Epoch 11/12
+893/893 [==============================] - 21s 23ms/step - loss: 1.0747 - val_loss: 0.9228
+Epoch 12/12
+893/893 [==============================] - 21s 23ms/step - loss: 1.0792 - val_loss: 0.9228
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.1446808510638298, Recall: 0.3333333333333333, F1: 0.20178041543026706
+
+==========[ XRP-USD ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+932/932 [==============================] - 26s 24ms/step - loss: 1.1074 - val_loss: 0.9899
+Epoch 2/12
+932/932 [==============================] - 22s 24ms/step - loss: 1.1097 - val_loss: 0.9832
+Epoch 3/12
+932/932 [==============================] - 22s 23ms/step - loss: 1.1121 - val_loss: 0.9795
+Epoch 4/12
+932/932 [==============================] - 22s 23ms/step - loss: 1.1138 - val_loss: 0.9773
+Epoch 5/12
+932/932 [==============================] - 22s 23ms/step - loss: 1.1138 - val_loss: 0.9755
+Epoch 6/12
+932/932 [==============================] - 22s 24ms/step - loss: 1.1147 - val_loss: 0.9746
+Epoch 7/12
+932/932 [==============================] - 22s 24ms/step - loss: 1.1127 - val_loss: 0.9721
+Epoch 8/12
+932/932 [==============================] - 22s 23ms/step - loss: 1.1110 - val_loss: 0.9690
+Epoch 9/12
+932/932 [==============================] - 22s 23ms/step - loss: 1.1096 - val_loss: 0.9663
+Epoch 10/12
+932/932 [==============================] - 22s 24ms/step - loss: 1.1093 - val_loss: 0.9646
+Epoch 11/12
+932/932 [==============================] - 22s 24ms/step - loss: 1.1089 - val_loss: 0.9630
+Epoch 12/12
+932/932 [==============================] - 22s 24ms/step - loss: 1.1080 - val_loss: 0.9618
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.24641843971631205, Recall: 0.3710954214805306, F1: 0.26002696326255476
+
+==========[ ETH-USD ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+932/932 [==============================] - 27s 25ms/step - loss: 1.0907 - val_loss: 1.1017
+Epoch 2/12
+932/932 [==============================] - 23s 24ms/step - loss: 1.0951 - val_loss: 1.0726
+Epoch 3/12
+932/932 [==============================] - 23s 25ms/step - loss: 1.0949 - val_loss: 1.0662
+Epoch 4/12
+932/932 [==============================] - 23s 25ms/step - loss: 1.0905 - val_loss: 1.0605
+Epoch 5/12
+932/932 [==============================] - 23s 25ms/step - loss: 1.0850 - val_loss: 1.0624
+Epoch 6/12
+932/932 [==============================] - 23s 24ms/step - loss: 1.0814 - val_loss: 1.0690
+Epoch 7/12
+932/932 [==============================] - 22s 24ms/step - loss: 1.0775 - val_loss: 1.0764
+Epoch 8/12
+932/932 [==============================] - 23s 24ms/step - loss: 1.0742 - val_loss: 1.0803
+Epoch 9/12
+932/932 [==============================] - 23s 24ms/step - loss: 1.0694 - val_loss: 1.0833
+Epoch 10/12
+932/932 [==============================] - 23s 24ms/step - loss: 1.0674 - val_loss: 1.0792
+Epoch 11/12
+932/932 [==============================] - 23s 24ms/step - loss: 1.0655 - val_loss: 1.0777
+Epoch 12/12
+932/932 [==============================] - 23s 25ms/step - loss: 1.0642 - val_loss: 1.0776
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.2281303602058319, Recall: 0.37787823990355635, F1: 0.27621612669856793
+
+==========[ PFE ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+4214/4214 [==============================] - 108s 25ms/step - loss: 0.7506 - val_loss: 0.4114
+Epoch 2/12
+4214/4214 [==============================] - 102s 24ms/step - loss: 0.7259 - val_loss: 0.4043
+Epoch 3/12
+4214/4214 [==============================] - 102s 24ms/step - loss: 0.7237 - val_loss: 0.3949
+Epoch 4/12
+4214/4214 [==============================] - 101s 24ms/step - loss: 0.7222 - val_loss: 0.3847
+Epoch 5/12
+4214/4214 [==============================] - 101s 24ms/step - loss: 0.7211 - val_loss: 0.3725
+Epoch 6/12
+4214/4214 [==============================] - 99s 24ms/step - loss: 0.7207 - val_loss: 0.3640
+Epoch 7/12
+4214/4214 [==============================] - 101s 24ms/step - loss: 0.7203 - val_loss: 0.3534
+Epoch 8/12
+4214/4214 [==============================] - 104s 25ms/step - loss: 0.7200 - val_loss: 0.3475
+Epoch 9/12
+4214/4214 [==============================] - 103s 24ms/step - loss: 0.7197 - val_loss: 0.3393
+Epoch 10/12
+4214/4214 [==============================] - 103s 24ms/step - loss: 0.7195 - val_loss: 0.3342
+Epoch 11/12
+4214/4214 [==============================] - 104s 25ms/step - loss: 0.7192 - val_loss: 0.3542
+Epoch 12/12
+4214/4214 [==============================] - 104s 25ms/step - loss: 0.7196 - val_loss: 0.3691
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.2998167059439644, Recall: 0.3333333333333333, F1: 0.31568789633305766
+
+==========[ NFLX ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+602/602 [==============================] - 20s 27ms/step - loss: 0.8080 - val_loss: 1.0655
+Epoch 2/12
+602/602 [==============================] - 15s 25ms/step - loss: 0.7663 - val_loss: 1.0418
+Epoch 3/12
+602/602 [==============================] - 15s 25ms/step - loss: 0.7661 - val_loss: 1.0307
+Epoch 4/12
+602/602 [==============================] - 15s 25ms/step - loss: 0.7665 - val_loss: 1.0247
+Epoch 5/12
+602/602 [==============================] - 15s 25ms/step - loss: 0.7669 - val_loss: 1.0209
+Epoch 6/12
+602/602 [==============================] - 15s 25ms/step - loss: 0.7670 - val_loss: 1.0178
+Epoch 7/12
+602/602 [==============================] - 15s 25ms/step - loss: 0.7671 - val_loss: 1.0162
+Epoch 8/12
+602/602 [==============================] - 15s 25ms/step - loss: 0.7669 - val_loss: 1.0142
+Epoch 9/12
+602/602 [==============================] - 15s 25ms/step - loss: 0.7670 - val_loss: 1.0126
+Epoch 10/12
+602/602 [==============================] - 15s 24ms/step - loss: 0.7663 - val_loss: 1.0126
+Epoch 11/12
+602/602 [==============================] - 15s 25ms/step - loss: 0.7658 - val_loss: 1.0128
+Epoch 12/12
+602/602 [==============================] - 15s 25ms/step - loss: 0.7652 - val_loss: 1.0127
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.25, Recall: 0.3333333333333333, F1: 0.2857142857142857
+
+==========[ GOOGL ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+1314/1314 [==============================] - 38s 26ms/step - loss: 0.4249 - val_loss: 0.5810
+Epoch 2/12
+1314/1314 [==============================] - 32s 25ms/step - loss: 0.3956 - val_loss: 0.5715
+Epoch 3/12
+1314/1314 [==============================] - 33s 25ms/step - loss: 0.3921 - val_loss: 0.5669
+Epoch 4/12
+1314/1314 [==============================] - 33s 25ms/step - loss: 0.3915 - val_loss: 0.5654
+Epoch 5/12
+1314/1314 [==============================] - 33s 25ms/step - loss: 0.3907 - val_loss: 0.5660
+Epoch 6/12
+1314/1314 [==============================] - 32s 24ms/step - loss: 0.3890 - val_loss: 0.5691
+Epoch 7/12
+1314/1314 [==============================] - 32s 24ms/step - loss: 0.3887 - val_loss: 0.5734
+Epoch 8/12
+1314/1314 [==============================] - 31s 24ms/step - loss: 0.3839 - val_loss: 0.5745
+Epoch 9/12
+1314/1314 [==============================] - 31s 24ms/step - loss: 0.3832 - val_loss: 0.5765
+Epoch 10/12
+1314/1314 [==============================] - 32s 24ms/step - loss: 0.3796 - val_loss: 0.5776
+Epoch 11/12
+1314/1314 [==============================] - 32s 24ms/step - loss: 0.3754 - val_loss: 0.5785
+Epoch 12/12
+1314/1314 [==============================] - 32s 24ms/step - loss: 0.3745 - val_loss: 0.5797
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.24772313296903462, Recall: 0.3333333333333333, F1: 0.28422152560083597
+
+==========[ AZN ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+4120/4120 [==============================] - 104s 24ms/step - loss: 0.6125 - val_loss: 0.3709
+Epoch 2/12
+4120/4120 [==============================] - 99s 24ms/step - loss: 0.5929 - val_loss: 0.3753
+Epoch 3/12
+4120/4120 [==============================] - 99s 24ms/step - loss: 0.5918 - val_loss: 0.3775
+Epoch 4/12
+4120/4120 [==============================] - 99s 24ms/step - loss: 0.5900 - val_loss: 0.3808
+Epoch 5/12
+4120/4120 [==============================] - 99s 24ms/step - loss: 0.5900 - val_loss: 0.3799
+Epoch 6/12
+4120/4120 [==============================] - 99s 24ms/step - loss: 0.5917 - val_loss: 0.3797
+Epoch 7/12
+4120/4120 [==============================] - 100s 24ms/step - loss: 0.5911 - val_loss: 0.3810
+Epoch 8/12
+4120/4120 [==============================] - 100s 24ms/step - loss: 0.5925 - val_loss: 0.3815
+Epoch 9/12
+4120/4120 [==============================] - 98s 24ms/step - loss: 0.5896 - val_loss: 0.3828
+Epoch 10/12
+4120/4120 [==============================] - 98s 24ms/step - loss: 0.5923 - val_loss: 0.3854
+Epoch 11/12
+4120/4120 [==============================] - 101s 24ms/step - loss: 0.5872 - val_loss: 0.3821
+Epoch 12/12
+4120/4120 [==============================] - 103s 25ms/step - loss: 0.5888 - val_loss: 0.3832
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.29230356663984985, Recall: 0.3333333333333333, F1: 0.311473067581083
+
+==========[ FB ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+1234/1234 [==============================] - 35s 25ms/step - loss: 0.7572 - val_loss: 0.7125
+Epoch 2/12
+1234/1234 [==============================] - 30s 25ms/step - loss: 0.7358 - val_loss: 0.7120
+Epoch 3/12
+1234/1234 [==============================] - 31s 25ms/step - loss: 0.7352 - val_loss: 0.7114
+Epoch 4/12
+1234/1234 [==============================] - 31s 25ms/step - loss: 0.7352 - val_loss: 0.7112
+Epoch 5/12
+1234/1234 [==============================] - 31s 25ms/step - loss: 0.7353 - val_loss: 0.7107
+Epoch 6/12
+1234/1234 [==============================] - 29s 24ms/step - loss: 0.7352 - val_loss: 0.7102
+Epoch 7/12
+1234/1234 [==============================] - 29s 24ms/step - loss: 0.7350 - val_loss: 0.7101
+Epoch 8/12
+1234/1234 [==============================] - 29s 24ms/step - loss: 0.7349 - val_loss: 0.7101
+Epoch 9/12
+1234/1234 [==============================] - 30s 25ms/step - loss: 0.7349 - val_loss: 0.7099
+Epoch 10/12
+1234/1234 [==============================] - 31s 25ms/step - loss: 0.7345 - val_loss: 0.7094
+Epoch 11/12
+1234/1234 [==============================] - 31s 25ms/step - loss: 0.7320 - val_loss: 0.7105
+Epoch 12/12
+1234/1234 [==============================] - 29s 24ms/step - loss: 0.7302 - val_loss: 0.7111
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.21603128054740958, Recall: 0.3333333333333333, F1: 0.26215895610913403
+
+==========[ TSLA ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+212/212 [==============================] - 10s 28ms/step - loss: 1.1462 - val_loss: 1.0551
+Epoch 2/12
+212/212 [==============================] - 5s 24ms/step - loss: 1.0967 - val_loss: 1.0573
+Epoch 3/12
+212/212 [==============================] - 5s 23ms/step - loss: 1.0875 - val_loss: 1.0562
+Epoch 4/12
+212/212 [==============================] - 5s 23ms/step - loss: 1.0827 - val_loss: 1.0571
+Epoch 5/12
+212/212 [==============================] - 5s 23ms/step - loss: 1.0873 - val_loss: 1.0561
+Epoch 6/12
+212/212 [==============================] - 5s 23ms/step - loss: 1.0674 - val_loss: 1.0531
+Epoch 7/12
+212/212 [==============================] - 5s 23ms/step - loss: 1.0676 - val_loss: 1.0611
+Epoch 8/12
+212/212 [==============================] - 5s 23ms/step - loss: 1.0520 - val_loss: 1.0657
+Epoch 9/12
+212/212 [==============================] - 5s 23ms/step - loss: 1.0496 - val_loss: 1.0756
+Epoch 10/12
+212/212 [==============================] - 5s 23ms/step - loss: 1.0321 - val_loss: 1.0536
+Epoch 11/12
+212/212 [==============================] - 5s 23ms/step - loss: 1.0140 - val_loss: 1.1056
+Epoch 12/12
+212/212 [==============================] - 5s 23ms/step - loss: 0.9731 - val_loss: 1.0641
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.2108262108262108, Recall: 0.2023809523809524, F1: 0.18414322250639384
+
+==========[ MSFT ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+1206/1206 [==============================] - 34s 25ms/step - loss: 0.5083 - val_loss: 0.6216
+Epoch 2/12
+1206/1206 [==============================] - 29s 24ms/step - loss: 0.4373 - val_loss: 0.6154
+Epoch 3/12
+1206/1206 [==============================] - 30s 25ms/step - loss: 0.4349 - val_loss: 0.6075
+Epoch 4/12
+1206/1206 [==============================] - 30s 25ms/step - loss: 0.4329 - val_loss: 0.6033
+Epoch 5/12
+1206/1206 [==============================] - 30s 24ms/step - loss: 0.4311 - val_loss: 0.6003
+Epoch 6/12
+1206/1206 [==============================] - 30s 25ms/step - loss: 0.4292 - val_loss: 0.5982
+Epoch 7/12
+1206/1206 [==============================] - 30s 25ms/step - loss: 0.4273 - val_loss: 0.5959
+Epoch 8/12
+1206/1206 [==============================] - 29s 24ms/step - loss: 0.4250 - val_loss: 0.5931
+Epoch 9/12
+1206/1206 [==============================] - 30s 24ms/step - loss: 0.4227 - val_loss: 0.5898
+Epoch 10/12
+1206/1206 [==============================] - 30s 25ms/step - loss: 0.4194 - val_loss: 0.5880
+Epoch 11/12
+1206/1206 [==============================] - 30s 25ms/step - loss: 0.4173 - val_loss: 0.5861
+Epoch 12/12
+1206/1206 [==============================] - 30s 25ms/step - loss: 0.4136 - val_loss: 0.5848
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.23623623623623624, Recall: 0.3333333333333333, F1: 0.27650849443468073
+
+==========[ AAPL ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+1087/1087 [==============================] - 35s 26ms/step - loss: 0.5862 - val_loss: 0.6944
+Epoch 2/12
+1087/1087 [==============================] - 27s 25ms/step - loss: 0.5694 - val_loss: 0.6625
+Epoch 3/12
+1087/1087 [==============================] - 27s 25ms/step - loss: 0.5623 - val_loss: 0.6714
+Epoch 4/12
+1087/1087 [==============================] - 27s 25ms/step - loss: 0.5530 - val_loss: 0.6784
+Epoch 5/12
+1087/1087 [==============================] - 27s 25ms/step - loss: 0.5477 - val_loss: 0.6527
+Epoch 6/12
+1087/1087 [==============================] - 27s 25ms/step - loss: 0.5447 - val_loss: 0.6373
+Epoch 7/12
+1087/1087 [==============================] - 27s 25ms/step - loss: 0.5431 - val_loss: 0.6305
+Epoch 8/12
+1087/1087 [==============================] - 27s 25ms/step - loss: 0.5423 - val_loss: 0.6255
+Epoch 9/12
+1087/1087 [==============================] - 27s 25ms/step - loss: 0.5415 - val_loss: 0.6204
+Epoch 10/12
+1087/1087 [==============================] - 27s 25ms/step - loss: 0.5408 - val_loss: 0.6147
+Epoch 11/12
+1087/1087 [==============================] - 27s 25ms/step - loss: 0.5401 - val_loss: 0.6101
+Epoch 12/12
+1087/1087 [==============================] - 27s 25ms/step - loss: 0.5390 - val_loss: 0.6090
+[+] Saving model & scaler...
+[+] Testing...
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.2305084745762712, Recall: 0.3333333333333333, F1: 0.2725450901803607
+
+==========[ INTC ]==========
+[+] Preprocessing...
+[+] Initiating model...
+[+] Training...
+Epoch 1/12
+4053/4053 [==============================] - 106s 25ms/step - loss: 0.9376 - val_loss: 0.4884
+Epoch 2/12
+4053/4053 [==============================] - 100s 25ms/step - loss: 0.9315 - val_loss: 0.4805
+Epoch 3/12
+4053/4053 [==============================] - 100s 25ms/step - loss: 0.9298 - val_loss: 0.4770
+Epoch 4/12
+4053/4053 [==============================] - 96s 24ms/step - loss: 0.9298 - val_loss: 0.4711
+Epoch 5/12
+4053/4053 [==============================] - 94s 23ms/step - loss: 0.9285 - val_loss: 0.4672
+Epoch 6/12
+4053/4053 [==============================] - 95s 23ms/step - loss: 0.9272 - val_loss: 0.4667
+Epoch 7/12
+4053/4053 [==============================] - 96s 24ms/step - loss: 0.9267 - val_loss: 0.4656
+Epoch 8/12
+4053/4053 [==============================] - 97s 24ms/step - loss: 0.9255 - val_loss: 0.4645
+Epoch 9/12
+4053/4053 [==============================] - 95s 23ms/step - loss: 0.9242 - val_loss: 0.4646
+Epoch 10/12
+4053/4053 [==============================] - 98s 24ms/step - loss: 0.9231 - val_loss: 0.4657
+Epoch 11/12
+4053/4053 [==============================] - 98s 24ms/step - loss: 0.9225 - val_loss: 0.4665
+Epoch 12/12
+4053/4053 [==============================] - 101s 25ms/step - loss: 0.9222 - val_loss: 0.4658
+/usr/local/lib/python3.7/dist-packages/sklearn/metrics/_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.26159301691216585, Recall: 0.3333333333333333, F1: 0.29313770441693415
+
+
+Executing Time: 2h 31m 6s

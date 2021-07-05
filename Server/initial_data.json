@@ -1,0 +1,92 @@
+{
+    "AAPL" : {
+        "company_name": "Apple Inc",
+        "category": "Tech",
+        "start_date": "2014-6-1" 
+    },
+    "MSFT" : {
+        "company_name": "Microsoft Corporation",
+        "category": "Tech",
+        "start_date": "2013-9-1" 
+    },
+    "TSLA" : {
+        "company_name": "Tesla Inc",
+        "category": "Tech",
+        "start_date": "2019-11-1" 
+    },
+    "AMZN" : {
+        "company_name": "Amazon.com, Inc.",
+        "category": "Tech",
+        "start_date": "2016-3-1" 
+    },
+    "FB" : {
+        "company_name": "Facebook, Inc.",
+        "category": "Tech",
+        "start_date": "2013-7-1" 
+    },
+    "GOOGL" : {
+        "company_name": "Alphabet Inc Class A",
+        "category": "Tech",
+        "start_date": "2013-1-1" 
+    },
+    "NFLX" : {
+        "company_name": "Netflix Inc",
+        "category": "Tech",
+        "start_date": "2017-6-1" 
+    },
+    "INTC" : {
+        "company_name": "Intel Corporation",
+        "category": "Tech",
+        "start_date": "1996-1-1" 
+    },
+    "AMD" : {
+        "company_name": "Advanced Micro Devices, Inc.",
+        "category": "Tech",
+        "start_date": "1996-6-1" 
+    },
+    "ORCL" : {
+        "company_name": "Oracle Corporation",
+        "category": "Tech",
+        "start_date": "1999-1-1" 
+    },
+    "PANW" : {
+        "company_name": "Palo Alto Networks Inc",
+        "category": "Tech",
+        "start_date": "2014-5-1" 
+    },
+    "PFE" : {
+        "company_name": "Pfizer Inc.",
+        "category": "Med",
+        "start_date": "1995-1-1" 
+    },
+    "MRNA" : {
+        "company_name": "Moderna Inc",
+        "category": "Med",
+        "start_date": "2020-2-14" 
+    },
+    "BNTX" : {
+        "company_name": "BioNTech SE - ADR",
+        "category": "Med",
+        "start_date": "2020-1-1" 
+    },
+    "AZN" : {
+        "company_name": "AstraZeneca plc",
+        "category": "Med",
+        "start_date": "1995-8-1" 
+    },
+    "BTC-USD" : {
+        "company_name": "Bitcoin",
+        "category": "Crypt",
+        "start_date": "2017-6-1" 
+    },
+    "ETH-USD" : {
+        "company_name": "Ethereum",
+        "category": "Crypt",
+        "start_date": "2017-4-1" 
+    },
+    "XRP-USD" : {
+        "company_name": "Ripple",
+        "category": "Crypt",
+        "start_date": "2017-4-1" 
+    }
+}

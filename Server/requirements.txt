@@ -1,0 +1,12 @@
+SQLAlchemy
+uvicorn
+pandas
+fastapi
+yfinance
+talib
+scikit-learn==0.22.2.post1
+pydantic
+pandas-ta
+pandas-datareader
+matplotlib
+Keras
