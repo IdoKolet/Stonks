@@ -1,28 +1,63 @@
-from fastapi import FastAPI, HTTPException, status
+"""
+    File: main.py
+    Written By: Ido Kolet
+    
+    Description:
+        Main file - the API. 
+"""
+
+# Imports
 import os
-import pandas as pd
-import numpy as np
-import pickle
 import json
+import pickle
+
+import numpy as np
+from numpy.core.fromnumeric import reshape
+import pandas as pd
+
 import uvicorn
-from database import engine, Base
-
-from sqlalchemy.orm import Session
-from database import SessionLocal, StockModel, get_db
-from fastapi import Depends
-#from models import StockModel
-
+from pydantic import BaseModel
 from sqlalchemy import desc
+from sqlalchemy.orm import Session
+
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi import FastAPI, HTTPException, status, Depends
 
 from aux_classes import Stock
+from database import SessionLocal, StockModel, get_db, engine, Base
 
 
-def slicer_vectorized(a,start,end):
-    b = a.view((str,1)).reshape(len(a),-1)[:,start:end]
-    return np.frombuffer(b.tobytes(),dtype=(str,end-start))
 
-# Get price and Data cols, and reformmat them
+# --------------------------------
+#       Auxillary functions
+# --------------------------------
+
+def slicer_vectorized(df,start,end):
+    """Save only the date without the time in the index.
+       Slicing the time from the datetime
+
+    Args:
+        df: Original df
+        start: first char index
+        end: last char index
+
+    Returns:
+        [type]: [description]
+    """    
+    reshaped = df.view((str,1)).reshape(len(df),-1)[:,start:end]
+    return np.frombuffer(reshaped.tobytes(),dtype=(str,end-start))
+
+
 def prepare_df(df):
+    """Get price and Data cols, and reformmat them.
+       Index of dates, col of prices rounded.
+
+    Args:
+        df: raw data
+
+    Returns:
+        Reformmated df
+    """    
     rearranged_df = df.copy()
     rearranged_df["date"] = rearranged_df.index
     rearranged_df["date"] = slicer_vectorized(np.datetime_as_string(rearranged_df["date"]), 0, 10)
@@ -31,48 +66,46 @@ def prepare_df(df):
 
 # Load stocks dat from .stk objects
 def load_data():
+    """Load stocks data from .stk files
+
+    Returns:
+        Dict of all the stock's data
+    """
+
     data = {}
-    for filename in os.listdir("stocks_structs"): # backend-env\data
+
+    # For all the .stk files
+    for filename in os.listdir("stocks_structs"): # Server\data
+        # Load object and convert to dict
         cur_stock = pickle.load(open(f"stocks_structs/{filename}","rb"))
         cur_stock = cur_stock.__dict__
 
+        # Reaarange raw data
         cur_stock["df"] = prepare_df(cur_stock.pop("raw_data"))
+        # Delete extended_df for the object - not necassery for client
         del cur_stock["extended_df"]
+        # Get the object's symbol
         symbol = cur_stock.pop("sym")
 
+        # Add it to the dict - the symbol is the key
         data[symbol] = cur_stock
 
     return data
 
 
 
-# Get cinnection to the db
-# def get_db():
-#     db = SessionLocal()
-#     try:
-#         yield db
-#     finally:
-#         db.close()
-#     pass
-
-
-from pydantic import BaseModel
-
-class StockSchema(BaseModel):
-    symbol : str
-    followers : int
-    gain : int
 
 
 
-#models.Base.metadata.create_all(engine)
+# --------------------------------
+#          Initiate API
+# --------------------------------
+
+# Connection to SQL via SQL alchemy 
 Base.metadata.create_all(engine)
 
-
+# All stocks data from the .stk files
 data = load_data()
-
-
-from fastapi.middleware.cors import CORSMiddleware
 
 # Create the API  - initate web ramework
 app = FastAPI(title="Stonks")
@@ -89,12 +122,14 @@ app.add_middleware( CORSMiddleware,
 # Get port number from the operating system, deafult port: 8000
 port_number = int(os.environ.get('PORT', 8000))
 
-
-
+# Pydantic model for lists in post requests
 class FavModel(BaseModel):
     fav_list: list
 
 
+# --------------------------------
+#       Handle HTTP requests
+# --------------------------------
 
 @app.post('/')
 def send_initial_data(request: FavModel, db: Session = Depends(get_db)):
@@ -253,4 +288,4 @@ def update_counter(symbol: str, inc: bool = True,  db: Session = Depends(get_db)
 if __name__ == "__main__":
     # Run the "app" server (of FastAPI)
     # On development, run this command on PS: uvicorn main:app --reload
-   uvicorn.run(app, host="0.0.0.0", port=port_number)
+    uvicorn.run(app, host="0.0.0.0", port=port_number)
