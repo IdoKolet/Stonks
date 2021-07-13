@@ -2,7 +2,7 @@
 
 # **All the project is uploaded, README file isn't done!**
 
-# Stonks - Machine learning based system for predicting security price's change
+# Stonks - Machine learning based system for security price trend prediction
 
 The system is built in a client-server architecture.  
 The server-side is written in Python with FastAPI.  
