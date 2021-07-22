@@ -1,20 +1,44 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/73475107/124584452-f2651380-de5c-11eb-917f-3682c64d727e.png" width="50%" height="50%">
 </p>
-# **All the project is uploaded, README file isn't done!**
 
-# Stonks - Machine learning based system for security price trend prediction
+# Stonks
+> Machine learning based system for stock price trend prediction.
 
-The system is built in a client-server architecture.  
-The server-side is written in Python with FastAPI.  
-The client-side is written in JS with React and Axios.
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Reaserch](#reserch)
+* [Screenshots](#screenshots)
+* [Installation](#installation)
+* [Run](#run)
 
-## Main Self Learning Topics
-- Neural Networks (LSTM)
+## General Information
+The system is built in a client-server architecture, and the communication is based on HTTP protocol.
+The Python server is a REST API, built using FastAPI. It supplies data about the stock to the client (Historical data, trend prediction, favorites stocks, etc.)  
+The client (as the web server is reffered in this doc), is consist of GUI built using ReactJS and Axios for the communication.
+The user data is saved at Firebase cloud.
+
+
+## Technologies Used
 - FastAPI
 - Axios
-- React
-- Firebase 
+- Firebase (Auth & Real-Time database)
+- SQLite
+- React JS 
+- Neural Networks (LSTM)
+
+
+## Features
+
+
+
+## Research
+
+
+
+## Screenshots
 
 ## Installation
 Clone the repo
@@ -42,9 +66,18 @@ Clone the repo
 <img src="https://user-images.githubusercontent.com/73475107/126638565-d9edb173-a9b0-49c1-8e35-767e16ea9a14.png" width="30%" height="30%">
 
  
-  
-
-## Run the Project
-### Server Side
-
-### Client side
+## Run
+### Server
+1. 
+2.
+3. Run without saving cache (run in powershell from Server directory)
+   ```sh
+   python -B .\main.py
+   ```
+   
+### Client
+1. Run web server (run in powershell from Client directory)
+   ```sh
+   npm start
+   ```
+2. Connect to localhost:3000 from the browser.
