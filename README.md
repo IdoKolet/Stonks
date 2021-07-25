@@ -9,11 +9,12 @@
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
-* [Reaserch](#reserch)
 * [Screenshots](#screenshots)
 * [Installation](#installation)
 * [Run](#run)
 * [Room for Improvement](#room-for-improvement)
+
+Research file is attached to the project (Hebrew).
 
 ## General Information
 The system is built in a client-server architecture, and the communication is based on HTTP protocol.
@@ -33,12 +34,12 @@ The user data is stored at Firebase cloud: email, password, name and favorites l
 
 ## Features
 - Download stocks historical data from [yahoo-finance](https://github.com/ranaroussi/yfinance)
-- Calculate n
-
-
-
-## Research
-
+- Calculate technical indicators for features.
+- Neural Networks (LSTM) models.
+- Rest API (HTTP).
+- React designed GUI.
+- Firebase storage - user data.
+- SQLite storage - stocks dynamic data (counteres & changes).
 
 
 ## Screenshots
@@ -98,12 +99,16 @@ Clone the repo
 
  
 ## Run
-### Server
-**Download data and train models (via google colab)**
-1. 
-2.
-**Run the API itself**
-3. Run without saving cache (run in powershell from Server directory)
+### Server  
+**Download data and train models (via google colab)**  
+1. Upload Server\initial_data.json to google colab
+2. Run Server\colab_files\colab_data_downloader.ipynb in google colab (Prevent downloading TALIB to local computer)
+3. Download the stocks' data file to Server\stocks_structs
+4. Run Server\colab_files\colab_models_training.ipynb localy
+5. Run stock_daily_changes.py localy  
+
+**Run the API itself**  
+6. Run without saving cache (run in powershell from Server directory)
    ```sh
    python -B .\main.py
    ```
